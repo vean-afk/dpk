@@ -11,7 +11,7 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 print ("\nSELAMAT DATANG\n")
 
 client = LINE()
-#client = LINE(authToken="ENDZbVCIHfQE1ma8T4Ea.c5rf08AU+OGn89nbVNHBgG.npyphALbT3KMuNawCMYpY/Wh7vQydRNJemZ/8XRYwZ0=")
+#client = LINE(authToken=" EN2lsr0gsK4zoYRW8lia.c5rf08AU+OGn89nbVNHBgG.LN00PSZlQnv+vnJQn56ZPevaYV3E6qaZPRCeWOTkrM4=")
 client.log("YOUR TOKEN : {}".format(str(client.authToken)))
 channel = LINEChannel(client,client.server.CHANNEL_ID['LINE_TIMELINE'])
 client.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
