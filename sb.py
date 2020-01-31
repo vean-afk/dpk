@@ -11,7 +11,7 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 print ("\nSELAMAT DATANG\n")
 
 client = LINE()
-#client = LINE(authToken="YOUR TOKEN")
+#client = LINE(authToken="ENDZbVCIHfQE1ma8T4Ea.c5rf08AU+OGn89nbVNHBgG.npyphALbT3KMuNawCMYpY/Wh7vQydRNJemZ/8XRYwZ0=")
 client.log("YOUR TOKEN : {}".format(str(client.authToken)))
 channel = LINEChannel(client,client.server.CHANNEL_ID['LINE_TIMELINE'])
 client.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -25,7 +25,7 @@ call = client
 mid = [client]
 myMID = client.profile.mid
 Admin=[myMID]
-Owner=["ud296655acef67cbd5e8208e63629f78b"]
+Owner=["ua7c91cf040367cdd2b143f011b2a7de4"]
 Team = Admin + mid + Owner
 
 contact = client.getProfile()
@@ -39,7 +39,7 @@ Connect_to = {
     "SpamInvite":False,
     "limit": 5,
     "Contact":False,
-    "GName":"Arifistifik",
+    "GName":"Vean Bot",
     "AutoRespon":False,
     "KickRespon":False,
     "KillOn":False,
@@ -77,9 +77,9 @@ Connect_to = {
     "Blacklist":{},
     "Ban":False,
     "Unban":False,
-    "comment": "autolike by arif",
+    "comment": "autolike by Vean",
     "Admin": {
-        "ud296655acef67cbd5e8208e63629f78b":True #MID ADMIN TARO DISINI
+        "ua7c91cf040367cdd2b143f011b2a7de4":True #MID ADMIN TARO DISINI
     },
 }
 
@@ -1478,7 +1478,7 @@ def LINE_OP_TYPE(op):
                                 cll = client.getProfile()
                                 cll.displayName = change
                                 client.updateProfile(cll)
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
+                                owner = "ua7c91cf040367cdd2b143f011b2a7de4"
                                 client.arifistifik(send,owner," Update Name Success","\n Change to " + str(change))
 
                         elif msgText.lower().startswith("changebio: "):
